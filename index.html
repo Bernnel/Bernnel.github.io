@@ -1,255 +1,417 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Material Design Coming Soon Template">
-        <meta name="keywords" content="coming soon template, material comingsoon, material under construction, site under construction, countdown, mailchimp, responsive, material comingsoon design">
-        <meta name="author" content="trendytheme.net">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="style.css">
+    <title>Fullstack Bootcamp</title>
+</head>
+<body>
+    <!--Navbar-->
+   <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 py-3 fixed-top">
+    <div class="container">
+        <a href="#" class="navbar-brand">Fullstack Bootcamp</a>
 
-        <title>Material Design Coming Soon Template</title>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"
+        >
+    <span class="navbar-toggler-icon"></span>
+    </button>
 
-        <!--  favicon -->
-        <link rel="shortcut icon" href="assets/img/ico/favicon.png">
-        <!--  apple-touch-icon -->
-        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/img/ico/apple-touch-icon-144-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/img/ico/apple-touch-icon-114-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/img/ico/apple-touch-icon-72-precomposed.png">
-        <link rel="apple-touch-icon-precomposed" href="assets/img/ico/apple-touch-icon-57-precomposed.png">
-
-        <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,500,700,900' rel='stylesheet' type='text/css'>
-        <!-- FontAwesome CSS -->
-        <link href="assets/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-        <!-- Material Icons CSS -->
-        <link href="assets/fonts/iconfont/material-icons.css" rel="stylesheet">
-        <!-- materialize -->
-        <link href="assets/materialize/css/materialize.min.css" rel="stylesheet">
-        <!-- Bootstrap -->
-        <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <!-- Style CSS -->
-        <link href="style.css" rel="stylesheet">
-        <!-- Custom CSS -->
-        <link href="assets/css/custom.css" rel="stylesheet">
-
-        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
-    </head>
-
-    <body id="top">
-        
-        <section class="banner-1 bg-fixed parallax-bg fullscreen-banner valign-wrapper" data-stellar-background-ratio="0.5">
-            <div class="valign-cell">
-              <div class="container">
-
-              	<div class="comingsoon-wrapper text-center">
-	                <div class="logo">
-	                    <a href="#">
-	                    	<img src="assets/img/icon-logo.png" alt="">
-	                    </a>
-	                </div><!-- /.logo -->
-	                
-	                <div class="mb-50">
-	                    <h1 class="intro-title black-text text-uppercase">Coming soon</h1>
-	                    <p class="sub-intro lead">An awesome new company for web resources is coming very soon. Enter your email to request an early invitation!</p>
-	                </div>
-
-	                <div class="countdown-wrapper mb-30 white-text">
-	                    <ul class="countdown">
-	                        <li>                    
-	                            <span class="days white-text">00</span>
-	                            <p>days</p>
-	                        </li>
-	                        <li>
-	                            <span class="hours white-text">00</span>
-	                            <p>hours </p>
-	                        </li>
-	                        <li>
-	                            <span class="minutes white-text">00</span>
-	                            <p>minutes</p>
-	                        </li>
-	                        <li>
-	                            <span class="seconds white-text">00</span>
-	                            <p>seconds</p>
-	                        </li>               
-	                    </ul><!-- /countdown -->
-	                </div><!-- /.countdown-wrapper -->
-
-		            <div class="row">
-		                <div class="col-md-6 col-md-offset-3">
-		                  <div class="subscribe-wrapper text-center">
-		                      <form class="subscribe-form mailchimp white-form" method="post">
-
-		                          <div class="input-field">
-		                          	<label class="sr-only" for="email">Email</label>
-		                            <input id="subscribeEmail" type="email" name="subscribeEmail" class="validate" autocomplete="off" >
-
-                                	<!-- to showing error message -->
-		                            <label for="subscribeEmail" data-error="wrong" data-success="right">Type your email</label>
-		                          </div>
-
-		                          <button type="submit" class="btn btn-lg pink waves-effect waves-light mt-30 text-capitalize">Subscribe Now</button>
-
-		                          <!-- to showing success messages -->
-		                          <p class="subscription-success text-center"></p>
-		                      </form>
-		                  </div><!-- /.subscribe-wrapper -->
-		                </div><!-- /.col-md-6 -->
-		            </div><!-- /.row -->
-
-	            </div><!-- /.comingsoon-wrapper -->
-
-              </div><!-- /.container -->
-            </div><!-- /.valign-cell -->
-
-            <div class="mouse-icon hidden-sm hidden-xs">
-                <div class="wheel"></div>
-            </div>
-        </section>
-
-
-        <section class="section-padding">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                    	<h2 class="font-25 text-bold text-uppercase mb-30">About startup</h2>
-                    	<p>Matrox material design multi-purpose html template. It comes with huge content and background variants. <a target="_blank" href="https://themeforest.net/item/matrox-material-design-multipurpose-html-template/16917670?ref=TrendyTheme">Matrox</a> is coming very soon. We are nearly there..</p>
-
-                      <div class="progress-section">
-                          <span class="progress-title">UX Design</span>
-                          <div class="progress">
-                              <div class="progress-bar brand-bg six-sec-ease-in-out" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                                  <span>90%</span>
-                              </div>
-                          </div><!-- /.progress -->
-                      </div> <!-- progress-section end -->
-
-                      <div class="progress-section">
-                          <span class="progress-title">Web Design</span>
-                          <div class="progress">
-                              <div class="progress-bar brand-bg six-sec-ease-in-out" role="progressbar" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100">
-                                  <span>86%</span>
-                              </div>
-                          </div>
-                      </div> <!-- progress-section end -->
-
-                      <div class="progress-section">
-                          <span class="progress-title">Web Development</span>
-                          <div class="progress">
-                              <div class="progress-bar brand-bg six-sec-ease-in-out" role="progressbar" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100">
-                                  <span>86%</span>
-                              </div>
-                          </div>
-                      </div> <!-- progress-section end -->
-
-                    </div><!-- /.col-md-6 -->
-
-                    <div class="col-md-5 col-md-offset-1">
-                    	<h2 class="font-25 text-bold text-uppercase mb-30">Have any question?</h2>
-                        <p>You can use contact form below or contact us via e-mail at: <a href="mailto:trendytheme.net@gmail.com?Subject=Hello%20TrendyTheme" target="_top">trendytheme.net@gmail.com</a> Contact form is fully working and very easy to customize.</p>
-
-	                    <form class="comingsoon-contact" name="contact-form" id="contactForm" action="sendemail.php" method="POST">
-
-	                      <div class="row">
-	                        <div class="col-md-6">
-	                          <div class="input-field">
-	                            <input type="text" name="name" class="validate" id="name">
-	                            <label for="name">Name</label>
-	                          </div>
-
-	                        </div><!-- /.col-md-6 -->
-
-	                        <div class="col-md-6">
-	                          <div class="input-field">
-	                            <label class="sr-only" for="email">Email</label>
-	                            <input id="email" type="email" name="email" class="validate" >
-	                            <label for="email" data-error="wrong" data-success="right">Email</label>
-	                          </div>
-	                        </div><!-- /.col-md-6 -->
-	                      </div><!-- /.row -->
-
-	                      <div class="input-field">
-	                        <textarea name="message" id="message" class="materialize-textarea" ></textarea>
-	                        <label for="message">Message</label>
-	                      </div>
-
-	                      <button type="submit" name="submit" class="waves-effect waves-light btn submit-button pink mt-30 text-capitalize">Send Message</button>
-	                    </form>
-
-                    </div><!-- /.col-md-5 -->
-                </div><!-- /.row -->
-            </div><!-- /.container -->
-        </section>
-
-
-        <footer class="footer">
-            <div class="primary-footer brand-bg text-center">
-                <div class="container">
-
-                  <a href="#top" class="page-scroll btn-floating btn-large pink back-top waves-effect waves-light tt-animate btt" data-section="#top">
-                    <i class="material-icons">&#xE316;</i>
-                  </a>
-
-                  <ul class="social-link tt-animate ltr mt-20">
-                    <li><a target="_blank" href="https://www.facebook.com/trendytheme/"><i class="fa fa-facebook"></i></a></li>
-                    <li><a target="_blank" href="https://twitter.com/Trendy_Theme"><i class="fa fa-twitter"></i></a></li>
-                    <li><a target="_blank" href="https://dribbble.com/trendytheme"><i class="fa fa-dribbble"></i></a></li>
-                    <li><a target="_blank" href="#"><i class="fa fa-tumblr"></i></a></li>
-                    <li><a target="_blank" href="#"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a target="_blank" href="#"><i class="fa fa-instagram"></i></a></li>
-                    <li><a target="_blank" href="#"><i class="fa fa-rss"></i></a></li>
-                  </ul>
-
-                  <hr class="mt-15">
-
-                  <div class="row">
-                    <div class="col-md-12">
-                          <div class="footer-logo">
-                            <a target="_blank" href="https://themeforest.net/item/matrox-material-design-multipurpose-html-template/16917670?ref=TrendyTheme"><img src="assets/img/logo-white.png" alt=""></a>
-                          </div>
-
-                          <span class="copy-text">Shared by <i class="fa fa-love"></i><a href="https://bootstrapthemes.co">BootstrapThemes</a>
-</span>
-                          <div class="footer-intro">
-                            <p>Matrox pack includes complete websites not just homepages, it comes with full website demos. Over 200+ ready html files only for 17$. Purchase <a target="_blank" href="https://themeforest.net/item/matrox-material-design-multipurpose-html-template/16917670?ref=TrendyTheme">Matrox</a> Now!</p>
-                          </div>
-                    </div><!-- /.col-md-12 -->
-                  </div><!-- /.row -->
-
-                </div><!-- /.container -->
-            </div><!-- /.primary-footer -->
-        </footer>
-
-        
-        <!-- Preloader -->
-        <div id="preloader">
-          <div class="preloader-position"> 
-            <div class="progress">
-              <div class="indeterminate"></div>
-            </div>
-          </div>
+        <div class="collapse navbar-collapse" id="navmenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="navbar-item">
+                    <a href="#learn" class="nav-link">What you'll Learn</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="#questions" class="nav-link">Questions</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="#instructors" class="nav-link">Instructors</a>
+                </li>
+            </ul>
         </div>
-        <!-- End Preloader -->
+    </div>
+    
+   </nav>
 
+   <!--Showcase-->
+   <section class="bg-dark text-light pt-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+    <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-between">
+            <div>
+                <h1>Become a <span class="text-warning">
+                    Web Developer
+                </span></h1>
+                <p class="lead my-4">
+                    We focus on teaching our students the fundamentals of the latest and greatest technologies to prepare them for their first dev role
+                </p>
+                <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#enroll">Start the Enrollment</button>
+            </div>
+            <img class="img-fluid w-50 d-none d-sm-block" src="img/showcase.svg" alt="">
+        </div>
+    </div>
+   </section>
 
-        <!-- jQuery -->
-        <script src="assets/js/jquery-2.1.3.min.js"></script>
-        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-        <script src="assets/materialize/js/materialize.min.js"></script>
-        <script src="assets/js/jquery.easing.min.js"></script>
-        <script src="assets/js/coundown-timer.js"></script>
-        <script src="assets/js/smoothscroll.min.js"></script>
-        <script src="assets/js/jquery.stellar.min.js"></script>
-        <script src="assets/js/imagesloaded.js"></script>
-        <script src="assets/js/jquery.inview.min.js"></script>
-        <script src="assets/js/ajaxchimp.js"></script>
-        <script src="assets/js/ajaxchimp-config.js"></script>
-        <script src="assets/js/scripts.js"></script>
+   <!--Newsletter-->
+   <section class="bg-primary text-light p-5">
+    <div class="container">
+        <div class="d-md-flex justify-content-between align-items-center">
+            <h3 class="md-3 mb-md-0">Sign Up For Our Newsletter </h3>
 
-    </body>
-  
+            <div class="input-group news-input">
+                <input type="text" class="form-control" placeholder="Enter Email"
+                />
+                <button class="btn btn-dark btn-lg" type="button">Submit</button>
+              </div>
+        </div>
+    </div>
+   </section>
+
+   <!--Boxes-->
+   <section class="p-5">
+    <div class="container">
+        <div class="row text-center g-4">
+            <div class="col-md">
+                <div class="card bg-dark text-light">
+                    <div class="card-body text-center">
+                        <div class="h1 mb-3">
+                            <i class="bi bi-laptop"></i>
+                        </div>
+                        <h3 class="card-title mb-3">
+                            Virtual
+                        </h3>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto cum odio, velit commodi recusandae quos!
+                        </p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="card bg-secondary text-light">
+                    <div class="card-body text-center">
+                        <div class="h1 mb-3">
+                            <i class="bi bi-person-square"></i>
+                        </div>
+                        <h3 class="card-title mb-3">
+                            Hybrid
+                        </h3>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto cum odio, velit commodi recusandae quos!
+                        </p>
+                        <a href="#" class="btn btn-dark">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="card bg-dark text-light">
+                    <div class="card-body text-center">
+                        <div class="h1 mb-3">
+                            <i class="bi bi-people"></i>
+                        </div>
+                        <h3 class="card-title mb-3">
+                            In Person
+                        </h3>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto cum odio, velit commodi recusandae quos!
+                        </p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   </section>
+
+   <!--Learn Sections-->
+   <section id="learn" class="p-5">
+    <div class="container">
+        <div class="row align-items-center justify-content-between">
+            <div class="col-md">
+                <img src="img/fundamentals.svg" class="img-fluid" alt="">
+            </div>
+            <div class="col-md p-5">
+                <h2>Learn The Fundamentals</h2>
+                <p class="lead">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, explicabo officiis sapiente atque perspiciatis animi.
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde mollitia adipisci, eos ducimus beatae nemo quod repellat ea aspernatur saepe magni aperiam in ratione fuga neque vitae sint rem esse.
+
+                </p>
+                <a href="#" class="btn btn-light mt-3">
+                    <i class="bi bi-chevron-right"></i> Read More
+                </a>
+            </div>
+        </div>
+    </div>
+   </section>
+
+   <section id="learn" class="p-5 bg-dark text-light">
+    <div class="container">
+        <div class="row align-items-center justify-content-between">
+            <div class="col-md p-5">
+                <h2>Learn React</h2>
+                <p class="lead">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, explicabo officiis sapiente atque perspiciatis animi.
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde mollitia adipisci, eos ducimus beatae nemo quod repellat ea aspernatur saepe magni aperiam in ratione fuga neque vitae sint rem esse.
+
+                </p>
+                <a href="#" class="btn btn-light mt-3">
+                    <i class="bi bi-chevron-right"></i> Read More
+                </a>
+            </div>
+            <div class="col-md">
+                <img src="img/react.svg" class="img-fluid" alt="">
+            </div>
+        </div>
+    </div>
+   </section>
+
+   <!--Questions Accordion-->
+   <section id="questions" class="p-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Frequesntly Asked Questions</h2>
+        <div class="accordion accordion-flush" id="questions">
+            <!--Item 1-->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-one">
+                  Where exactly are you located?
+                </button>
+              </h2>
+              <div id="question-one" class="accordion-collapse collapse" data-bs-parent="#questions">
+                <div class="accordion-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque cumque delectus dolore dolores fuga veritatis excepturi! Quia voluptatem at, tempora earum odit eum amet alias placeat itaque expedita magni nostrum tenetur ducimus! Sed unde esse sequi eaque voluptate temporibus amet tenetur culpa libero! Suscipit temporibus voluptatem cum, repellat iusto blanditiis.
+                </div>
+              </div>
+            </div>
+            <!--Item 2-->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-two">
+                    How much does it cost to attend?
+                  </button>
+                </h2>
+                <div id="question-two" class="accordion-collapse collapse" data-bs-parent="#questions">
+                  <div class="accordion-body">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque cumque delectus dolore dolores fuga veritatis excepturi! Quia voluptatem at, tempora earum odit eum amet alias placeat itaque expedita magni nostrum tenetur ducimus! Sed unde esse sequi eaque voluptate temporibus amet tenetur culpa libero! Suscipit temporibus voluptatem cum, repellat iusto blanditiis.
+                  </div>
+                </div>
+              </div>
+            <!--Item 3-->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-three">
+                    What do I need to know?
+                  </button>
+                </h2>
+                <div id="question-three" class="accordion-collapse collapse" data-bs-parent="#questions">
+                  <div class="accordion-body">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque cumque delectus dolore dolores fuga veritatis excepturi! Quia voluptatem at, tempora earum odit eum amet alias placeat itaque expedita magni nostrum tenetur ducimus! Sed unde esse sequi eaque voluptate temporibus amet tenetur culpa libero! Suscipit temporibus voluptatem cum, repellat iusto blanditiis.
+                  </div>
+                </div>
+              </div>
+              <!--Item 4-->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-four">
+                    How do I sign up?
+                  </button>
+                </h2>
+                <div id="question-four" class="accordion-collapse collapse" data-bs-parent="#questions">
+                  <div class="accordion-body">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque cumque delectus dolore dolores fuga veritatis excepturi! Quia voluptatem at, tempora earum odit eum amet alias placeat itaque expedita magni nostrum tenetur ducimus! Sed unde esse sequi eaque voluptate temporibus amet tenetur culpa libero! Suscipit temporibus voluptatem cum, repellat iusto blanditiis.
+                  </div>
+                </div>
+              </div>
+              <!--Item 5-->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-five">
+                    Do you help me find a job?
+                  </button>
+                </h2>
+                <div id="question-five" class="accordion-collapse collapse" data-bs-parent="#questions">
+                  <div class="accordion-body">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque cumque delectus dolore dolores fuga veritatis excepturi! Quia voluptatem at, tempora earum odit eum amet alias placeat itaque expedita magni nostrum tenetur ducimus! Sed unde esse sequi eaque voluptate temporibus amet tenetur culpa libero! Suscipit temporibus voluptatem cum, repellat iusto blanditiis.
+                  </div>
+                </div>
+              </div>
+    </div>
+   </section>
+   <section id="instructors" class="p-5 bg-primary">
+    <div class="container">
+        <h2 class="text-center text-white">Our Instructors</h2>
+        <p class="lead text-center text-white mb-5">
+            Our instructors all have 5+ years working as web developer in the industry
+        </p>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-3">
+                <div class="card bg-light">
+                    <div class="card-body text-center">
+                        <img src="https://randomuser.me/api/portraits/men/11.jpg" class="rounded-circle mb-3" alt=""
+                        />
+                        <h3 class="card-title mb-3">John Doe</h3>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure esse laboriosam ratione perspiciatis vero. Impedit.</p>
+                        <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                        <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                        <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                        <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3">
+                <div class="card bg-light">
+                    <div class="card-body text-center">
+                        <img src="https://randomuser.me/api/portraits/women/11.jpg" class="rounded-circle mb-3" alt=""
+                        />
+                        <h3 class="card-title mb-3">Jane Doe</h3>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure esse laboriosam ratione perspiciatis vero. Impedit.</p>
+                        <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                        <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                        <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                        <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card bg-light">
+                    <div class="card-body text-center">
+                        <img src="https://randomuser.me/api/portraits/men/12.jpg" class="rounded-circle mb-3" alt=""
+                        />
+                        <h3 class="card-title mb-3">Steve Smith</h3>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure esse laboriosam ratione perspiciatis vero. Impedit.</p>
+                        <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                        <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                        <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                        <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card bg-light">
+                    <div class="card-body text-center">
+                        <img src="https://randomuser.me/api/portraits/women/12.jpg" class="rounded-circle mb-3" alt=""
+                        />
+                        <h3 class="card-title mb-3">Sara Smith</h3>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure esse laboriosam ratione perspiciatis vero. Impedit.</p>
+                        <a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+                        <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
+                        <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+                        <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   </section>
+
+   <!--Contact & Map-->
+
+   <section class="p-5">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md">
+                <h2 class="text-center mb-4">Contact Info</h2>
+                <ul class="list-group list-group-flush lead">
+                    <li class="list-group-item">
+                        <span class="fw-bold">Main Location:</span> 50 Main st Boston MA
+                    </li>
+                    <li class="list-group-item">
+                        <span class="fw-bold">Enrollment Phone:</span> (555)555-5555
+                    </li>
+                    <li class="list-group-item">
+                        <span class="fw-bold">Student Phone:</span> (333)333-3333
+                    </li>
+                    <li class="list-group-item">
+                        <span class="fw-bold">Enrollment Email:</span> enroll@fullstackbc.test
+                    </li>
+                    <li class="list-group-item">
+                        <span class="fw-bold">Student Email:</span> student@fullstackbc.test
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md">
+                <div id="map"></div>
+            </div>
+        </div>
+    </div>
+   </section>
+
+   <!--Footer-->
+   <footer class="p-5 bg-dark text-white text-center position-relative">
+<div class="container">
+    <p class="lead">Copyright &copy; 2021 Fullstack Bootcamp</p>
+
+    <a href="#" class="position-absolute bottom-0 end-0 p-5">
+        <i class="bi bi-arrow-up-circle h1"></i>
+    </a>
+</div>
+   </footer>
+
+   <!-- Modal -->
+<div class="modal fade" id="enroll" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="enrollLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <p class="lead">Fill ou this form and we will get back to you</p>
+            <form>
+                <div class="mb-3">
+                    <label for="first-name" class="col-form-label">
+                        First Name:
+                    </label>
+                    <input type="text" class="form-control" id="first-name">
+                </div>
+                <div class="mb-3">
+                    <label for="last name" class="col-form-label">
+                        Last Name:
+                    </label>
+                    <input type="text" class="form-control" id="last-name">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="col-form-label">
+                        Email:
+                    </label>
+                    <input type="text" class="form-control" id="email">
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="col-form-label">
+                        Phone:
+                    </label>
+                    <input type="text" class="form-control" id="phone">
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
+
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiYmVybnNreSIsImEiOiJjbGRyMjNzMW0xajRlM3dxdTdjemxoeGU1In0.xsWB6ZGYcqpSyiYn58xz-g';
+  var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v11',
+    center: [-71.060982, 42.35725],
+    zoom: 18,
+  })
+    </script>
+
+</body>
 </html>
